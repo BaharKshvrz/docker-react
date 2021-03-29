@@ -1,0 +1,10 @@
+sudo: required
+
+services:
+ - docker
+
+before_install:
+ - docker build -t  BaharKshvrz/docker-react -f Dockefile.dev .
+
+script:
+ - docker run  BaharKshvrz/docker-react npm run test -- --coverage
