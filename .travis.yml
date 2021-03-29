@@ -4,7 +4,7 @@ services:
  - docker
 
 before_install:
- - docker build -t  BaharKshvrz/docker-react -f Dockefile.dev .
+ - docker build -t baharkshvrz/docker-react -f Dockefile.dev .
 
 script:
- - docker run  BaharKshvrz/docker-react npm run test -- --coverage
+ - docker run baharkshvrz/docker-react npm run test -- --coverage
